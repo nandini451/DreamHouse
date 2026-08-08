@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House | About Us</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            background-color:rgb(122,122,174);
+        }
+        .nav{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:60px;
+            background:white;
+            border-bottom:2px solid black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:30px;
+            z-index:1000;
+            box-shadow:0 3px 10px rgba(0,0,0,.3);
+        }
+        .nav a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+        }
+        .nav a:hover{
+            color:blue;
+        }
+        .hero{
+            margin-top:60px;
+            height:350px;
+            position:relative;
+            overflow:hidden;
+        }
+        .hero img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            opacity:.65;
+        }
+        .hero-content{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+            color:white;
+            text-shadow:3px 3px 10px black;
+        }
+        .hero-content h1{
+            font-size:55px;
+        }
+        .hero-content p{
+            font-size:22px;
+            margin-top:15px;
+        }
+        .about{
+            width:85%;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 5px 15px rgba(0,0,0,.3);
+        }
+        .about h1{
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .about p{
+            font-size:18px;
+            line-height:1.7;
+            text-align:center;
+        }
+        .mission{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+            margin:40px auto;
+            width:90%;
+        }
+        .mission-card{
+            background:white;
+            width:280px;
+            padding:30px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,.3);
+            transition:.4s;
+        }
+        .mission-card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 10px 25px rgba(0,0,0,.4);
+        }
+        .mission-card h2{
+            margin:15px 0;
+        }
+        .mission-card p{
+            line-height:1.5;
+        }
+        .why{
+            width:85%;
+            margin:50px auto;
+            text-align:center;
+            color:white;
+        }
+        .why h1{
+            margin-bottom:30px;
+        }
+        .why-container{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+        .why-card{
+            background:white;
+            color:black;
+            width:220px;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.3);
+            transition:.4s;
+        }
+        .why-card:hover{
+            transform:scale(1.05);
+        }
+        .why-card h2{
+            margin-bottom:10px;
+        }
+        .stats{
+            background:white;
+            width:90%;
+            margin:50px auto;
+            padding:35px;
+            border-radius:20px;
+            display:flex;
+            justify-content:center;
+            gap:70px;
+            flex-wrap:wrap;
+            text-align:center;
+        }
+        .stat h1{
+            color:rgb(122,122,174);
+            font-size:40px;
+        }
+        .stat p{
+            font-weight:bold;
+            margin-top:5px;
+        }
+        .button{
+            display:block;
+            width:220px;
+            margin:30px auto;
+            padding:15px;
+            background:black;
+            color:white;
+            text-align:center;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+        }
+        .button:hover{
+            background:white;
+            color:black;
+            border:2px solid black;
+        }
+        footer{
+            background:white;
+            padding:25px;
+            text-align:center;
+            margin-top:50px;
+        }
+        footer p{
+            margin:8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html">HOME</a>
+        <a href="property.html">PROPERTIES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="home.html#contact">CONTACT</a>
+        <a href="home.html#complaint">COMPLAINT</a>
+    </div>
+    <div class="hero">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+        <div class="hero-content">
+            <h1>ABOUT DREAM HOUSE</h1>
+            <p>Turning Houses Into Happy Homes 🏠</p>
+        </div>
+    </div>
+    <div class="about">
+        <h1>WHO ARE WE?</h1>
+        <p>
+            Dream House is a property platform created to make the process
+            of buying, selling and renting properties simple and convenient.
+            We help clients discover properties according to their needs,
+            preferences and budget.
+        </p>
+        <br>
+        <p>
+            Our goal is to provide a smooth and trustworthy property
+            experience where buyers can explore different properties
+            and sellers can easily list their properties.
+        </p>
+    </div>
+    <div class="mission">
+        <div class="mission-card">
+            <div style="font-size:45px;">🎯</div>
+            <h2>Our Mission</h2>
+            <p>
+                To make property searching and selling easier,
+                faster and more transparent for everyone.
+            </p>
+        </div>
+        <div class="mission-card">
+            <div style="font-size:45px;">🏠</div>
+            <h2>Our Vision</h2>
+            <p>
+                To become a trusted platform where every person
+                can find their dream home with confidence.
+            </p>
+        </div>
+        <div class="mission-card">
+            <div style="font-size:45px;">🤝</div>
+            <h2>Our Promise</h2>
+            <p>
+                We focus on providing reliable property information
+                and a simple experience for our clients.
+            </p>
+        </div>
+    </div>
+    <div class="why">
+        <h1>WHY CHOOSE DREAM HOUSE?</h1>
+        <div class="why-container">
+            <div class="why-card">
+                <h2>✔</h2>
+                <h2>Verified Properties</h2>
+                <p>
+                    Explore properties with clear and useful information.
+                </p>
+            </div>
+            <div class="why-card">
+                <h2>💰</h2>
+                <h2>Affordable Options</h2>
+                <p>
+                    Find properties suitable for different budgets.
+                </p>
+            </div>
+            <div class="why-card">
+                <h2>🤝</h2>
+                <h2>Trusted Service</h2>
+                <p>
+                    We aim to provide a reliable property experience.
+                </p>
+            </div>
+            <div class="why-card">
+                <h2>📞</h2>
+                <h2>Easy Support</h2>
+                <p>
+                    Get assistance whenever you need help.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="stat">
+            <h1>100+</h1>
+            <p>Properties</p>
+        </div>
+        <div class="stat">
+            <h1>50+</h1>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+            <h1>25+</h1>
+            <p>Trusted Agents</p>
+        </div>
+        <div class="stat">
+            <h1>24×7</h1>
+            <p>Support</p>
+        </div>
+    </div>
+    <div>
+        <h1 style="text-align:center;color:white;">
+            Ready To Find Your Dream House?
+        </h1>
+        <a href="property.html" class="button">
+            EXPLORE PROPERTIES 🏠
+        </a>
+    </div>
+    <footer>
+        <h2>🏠 Dream House</h2>
+        <p>Buy • Sell • Rent</p>
+        <p>📞 +91 798XXXXXX0</p>
+        <p>📧 Dreamhouse.Official@gmail.com</p>
+        <p>📍 Ambala Cantt, Haryana</p>
+        <br>
+        <p>© 2026 Dream House. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+```

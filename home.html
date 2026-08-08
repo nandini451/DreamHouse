@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        body{
+            scroll-behavior: smooth;
+            background-color: rgb(154, 154, 197);
+        }
+        .nav{
+            box-shadow:0 3px 10px rgba(0,0,0,.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            z-index: 1000;
+        }
+        .nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.nav a:hover{
+    color:blue;
+}
+        a{
+            margin:10px;
+            text-decoration: none;
+            color:black;
+        }
+        img{
+            margin-top:60px;
+            width:100%;
+            height:450px;
+            opacity: 0.7;
+            border:1px solid black;
+        }
+        .image{
+            position:relative;
+        }
+        .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    text-shadow:3px 3px 10px black;
+    z-index:2;
+}       
+        .content h1{
+            font-size: 54px;
+        }
+        .contacts1{
+    width:100%;
+    border-radius:20px;
+    padding:20px;
+    height:auto;
+}
+        .contacts2{
+            font-size:20px;
+            border:1px solid black;
+            width:30%;
+            border-radius:10px;
+            padding:10px;
+        }
+        .image1{
+            width:600px;
+            height:400px;
+            border:2px solid black;
+            opacity: 1;
+            margin-top:0px;
+        }
+        input{
+            padding:15px;
+            margin:5px;
+            width:300px;
+            border:2px solid black;
+        }
+        .form2{
+            border:2px solid black;
+            width:30%;
+            padding:40px;
+            border-radius:20px;
+        }
+        .line{
+            margin-top:-30px;
+        }
+        .buy,.sell{
+padding:15px 25px;
+margin:10px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+.buy{
+background:white;
+color:black;
+}
+.sell{
+background:black;
+color:white;
+}
+.buy:hover,.sell:hover{
+transform:scale(1.05);
+transition:.4s;
+}
+textarea{
+width:300px;
+height:120px;
+padding:15px;
+border:2px solid black;
+margin:5px;
+resize:none;
+}
+.feature-card{
+transition:.4s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+.feature-card button{
+width:100%;
+padding:10px;
+margin-top:10px;
+background:rgb(122,122,174);
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <br>
+        <a href="home.html">HOME</a>
+        <a href="property.html">PROPERTIES</a>
+        <a href="about.html">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#complaint">COMPLAINT</a>
+    </div>
+    <div class="image">
+        <div class="content">
+            <h1>BUY OR SELL</h1>
+            <div class="line">
+            <h2>YOUR DREAM HOUSE</h2>
+            </div>
+            <br>
+<a href="property.html#buy">
+<button class="buy">BUY PROPERTY</button>
+</a>
+<a href="property.html#sell">
+<button class="sell">SELL PROPERTY</button>
+</a>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUZs1Mjgp5GxS0ShLUVXh2BEx1kn2XDKrzxPoWMAYqPA&s=10">
+    </div>
+    <br>
+    <center>
+<h1 style="color:white;">FEATURED PROPERTIES</h1>
+<div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;">
+<div class="feature-card" style="background:white;width:250px;padding:15px;border-radius:15px;">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" style="width:100%;height:180px;opacity:1;margin-top:0;">
+<h3>Luxury Villa</h3>
+<p>📍 Chandigarh</p>
+<p><b>₹95,00,000</b></p>
+<a href="property.html">
+    <center>
+    <button class="view-btn">View Details</button>
+    </center>
+</a>
+</div>
+<div class="feature-card" style="background:white;width:250px;padding:15px;border-radius:15px;">
+<img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" style="width:100%;height:180px;opacity:1;margin-top:0;">
+<h3>Modern Apartment</h3>
+<p>📍 Mohali</p>
+<p><b>₹65,00,000</b></p>
+<a href="property.html">
+    <center>
+    <button class="view-btn">View Details</button></center>
+</a>
+</div>
+<div class="feature-card" style="background:white;width:250px;padding:15px;border-radius:15px;">
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" style="width:100%;height:180px;opacity:1;margin-top:0;">
+<h3>Family House</h3>
+<p>📍 Ambala</p>
+<p><b>₹72,00,000</b></p>
+<a href="property.html">
+    <center>
+    <button class="view-btn">View Details</button></center>
+</a>
+</div>
+</div>
+    <a href="property.html">
+        <button class="buy">Explore All Properties</button>
+    </a>
+<br><br>
+    </center>
+<center>
+<h1 style="color:white;">WHY CHOOSE US ?</h1>
+<div style="display:flex;justify-content:center;gap:25px;flex-wrap:wrap;">
+<div class="contacts2">
+✔ Verified Properties
+</div>
+<div class="contacts2">
+💰 Affordable Prices
+</div>
+<div class="contacts2">
+🤝 Trusted Agents
+</div>
+<div class="contacts2">
+📞 24×7 Support
+</div>
+</div>
+</center>
+<br><br>
+    <div class="contacts1" id="contact">
+        <center>
+        <h1>CONTACT US 📲:</h1>
+        <div class="contacts2">
+        <a href="tel:7988641930">📞 +91 798XXXXXX0</a><br>
+        <a href="mailto:aggarwalnandini451@gmail.com">📧 Dreamhouse.Official@gmail.com</a><br>
+        🕒 Mon-Sat : 9 AM - 6 PM<br>
+        <a href="tel:7988641930">
+    <button class="buy">Call Now</button>
+</a>
+        </div>
+        </center>
+    </div>
+    <br>
+    <center>
+    <div class="location1">
+        <h1>LOCATION 📍</h1>
+        <a href="https://www.google.com/maps"><img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPrNOn84HrMWB-3hZdSaeeWCybB5B6nKgrt-NliUsK5fdaRcsl8_eWJVw&s=10"></img></a>
+    </div>
+    </center>
+    <br>
+    <br>
+    <center>
+    <div class="form1" id="complaint">
+        <h1>COMPLAINT / SUGGESTION</h1>
+        <div class="form2">
+            <form id="complaintForm">
+                <input type="text" placeholder="NAME" required><br>
+                <input type="email" placeholder="EMAIL" required><br>
+                <input type="tel" placeholder="PHONE" minlength="10" maxlength="10" required><br>
+                <input type="text" placeholder="SUBJECT" required><br>
+                <textarea placeholder="Complaint / Suggestion" minlength="20" required></textarea><br>
+                <input type="SUBMIT" value="SUBMIT">
+            </form>
+        </div>
+    </div></center>
+    <footer style="background:white;padding:20px;text-align:center;margin-top:40px;">
+<h2>Dream House</h2>
+<p>Buy • Sell • Rent</p>
+<p>📞 798XXXXXX0 | 📧 Dreamhouse.Official@gmail.com</p>
+<p>© 2026 Dream House. All Rights Reserved.</p>
+</footer>
+<script>
+document.getElementById("complaintForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your complaint/suggestion has been submitted successfully.");
+    this.reset();
+    document.getElementById("name").focus();
+});
+</script>
+</body>
+</html>
